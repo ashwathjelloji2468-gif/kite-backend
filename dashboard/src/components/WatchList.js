@@ -3,6 +3,9 @@ import { GeneralContext } from "./GeneralContext";
 // 🎯 1. IMPORT YOUR DOUGHNUT CHART COMPONENT HERE
 import { DoughnutChart } from "./DoughnoutChart";
 
+// 🚀 Live Render Backend URL reference for network queries
+const BACKEND_URL = "https://kite-backend-lmin.onrender.com";
+
 const WatchList = () => {
   const [searchQuery, setSearchQuery] = useState("");
 

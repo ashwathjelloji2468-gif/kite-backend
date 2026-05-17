@@ -5,11 +5,12 @@ const Orders = () => {
   // 2. Initialize state for holding orders data array and loading lifecycle flags
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(true);
+  const BACKEND_URL = "https://kite-backend-lmin.onrender.com";
 
   // 3. Automatically fetch transaction entries when page mounts
   useEffect(() => {
     axios
-      .get("http://localhost:3002/allOrders")
+      .get(`${BACKEND_URL}/allOrders`)
       .then((response) => {
         // Express passes parsed documents inside response.data
         setOrders(response.data);

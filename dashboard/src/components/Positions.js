@@ -5,11 +5,11 @@ const Positions = () => {
   // 2. Initialize state for positions data and loading states
   const [positions, setPositions] = useState([]);
   const [loading, setLoading] = useState(true);
-
+ const BACKEND_URL = "https://kite-backend-lmin.onrender.com";
   // 3. Fetch data from backend on component mount using Axios
   useEffect(() => {
     axios
-      .get("http://localhost:3002/allPositions")
+      .get(`${BACKEND_URL}/allPositions`)
       .then((response) => {
         setPositions(response.data);
         setLoading(false);

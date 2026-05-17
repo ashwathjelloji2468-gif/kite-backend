@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 // 🎯 1. IMPORT YOUR VERTICAL GRAPH COMPONENT HERE
 import { VerticalGraph } from "./VerticalGraph";
+const BACKEND_URL = "https://kite-backend-lmin.onrender.com";
 const Holdings = () => {
   // Initialize state for holdings data
   const [holdings, setHoldings] = useState([]);
@@ -10,7 +11,7 @@ const Holdings = () => {
   // Fetch data using Axios inside your useEffect hook
   useEffect(() => {
     axios
-      .get("http://localhost:3002/allHoldings")
+      .get(`${BACKEND_URL}/allHoldings`)
       .then((response) => {
         setHoldings(response.data);
         loading === true && setLoading(false);

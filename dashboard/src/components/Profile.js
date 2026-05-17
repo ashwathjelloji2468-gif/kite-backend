@@ -1,5 +1,8 @@
 import React from "react";
 
+// 🚀 Live Render Backend URL reference for network queries
+const BACKEND_URL = "https://kite-backend-lmin.onrender.com";
+
 const Profile = () => {
   // Mocking standard structural user metadata variables matching Zerodha's style
   const userProfileData = {

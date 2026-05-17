@@ -9,8 +9,7 @@ const Login = () => {
   const [errorMessage, setErrorMessage] = useState("");
   const navigate = useNavigate();
 
-  // Your backend is running on port 3002
-  const BACKEND_URL = process.env.REACT_APP_API_URL || "http://localhost:3002";
+  const BACKEND_URL = "https://kite-backend-lmin.onrender.com"; // 🚀 New live link!
 
   // --- PHASE 1 HANDLER: Verify Password with Backend ---
   const handlePasswordSubmit = async (e) => {
