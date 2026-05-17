@@ -18,8 +18,7 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "https://kite-backend-azure.vercel.app",
-      "https://kite-backend-t5ba.vercel.app",
+      /https:\/\/kite-backend-.*\.vercel\.app$/, // Allow ANY Vercel link starting with kite-backend-
       "http://localhost:3000",
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
