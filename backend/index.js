@@ -15,7 +15,17 @@ const { PositionsModel } = require("./model/positionsModel");
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "https://kite-backend-azure.vercel.app",
+      "https://kite-backend-t5ba.vercel.app",
+      "http://localhost:3000",
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  }),
+);
 app.use(express.json());
 
 // ==========================================================================
