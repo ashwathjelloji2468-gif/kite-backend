@@ -9,7 +9,7 @@ const speakeasy = require("speakeasy");
 const PORT = process.env.PORT || 3002;
 const uri = process.env.MONGO_URL;
 
-const { HoldingsModel } = require("./model/holdingsModel");
+const { HoldingsModel } = require("./model/HoldingsModel");
 const { OrdersModel } = require("./model/ordersModel");
 const { PositionsModel } = require("./model/positionsModel");
 
