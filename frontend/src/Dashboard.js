@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
 import { Routes, Route } from "react-router-dom";
-import Topbar from "./TopBar";
+import Topbar from "../../dashboard/src/components/TopBar";
 import WatchList from "./WatchList";
 import Summary from "./Summary";
 import Orders from "./Orders";
 import Holdings from "./Holdings";
 import Positions from "./Positions";
 import Funds from "./Funds";
-import BuyActionWindow from "./BuyActionWindow";
+import BuyActionWindow from "../../dashboard/src/components/BuyActionWindow";
 import { GeneralContext } from "./GeneralContext";
 import Apps from "./Apps";
 import Profile from "./Profile";
