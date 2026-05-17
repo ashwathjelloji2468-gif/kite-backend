@@ -1,0 +1,142 @@
+ .container {
+  --radius: 4px;
+  width: 400px; /* Fixed width for better look */
+  background: #ffffff;
+  position: fixed; /* Fixed so it stays on top of dashboard */
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  z-index: 1000;
+  border-radius: var(--radius);
+  border: 1px solid rgb(238, 238, 238);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.container .header {
+  width: 100%;
+  background: #4184f3;
+  box-sizing: border-box;
+  padding: 16px;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.header h3 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0 6px 0;
+}
+
+.header h3 span {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+.market-options {
+  font-weight: 300;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.market-options label {
+  margin-right: 15px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.tab {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #eee;
+}
+
+.tab button {
+  border: none;
+  padding: 12px 20px;
+  background: transparent;
+  color: #666;
+  font-weight: 500;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.regular-order {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.inputs fieldset {
+  flex: 1;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  margin-right: 8px;
+  padding: 0;
+}
+
+.inputs fieldset legend {
+  margin-left: 10px;
+  font-size: 0.75rem;
+  padding: 0 4px;
+  color: #999;
+}
+
+.inputs fieldset input {
+  border: none;
+  width: 100%;
+  height: 35px;
+  padding: 0 12px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  outline: none;
+}
+
+.buttons {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: #fbfbfb;
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+
+.buttons span {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.btn {
+  padding: 10px 25px;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-grey {
+  background: #eee;
+  color: #666;
+  margin-right: 10px;
+}
+
+.btn-blue {
+  background: #4184f3;
+  color: #fff;
+}
+
+.btn-blue:hover {
+  background: #357ae8;
+}
