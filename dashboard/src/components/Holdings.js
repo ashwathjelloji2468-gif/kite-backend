@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 // 🎯 1. IMPORT YOUR VERTICAL GRAPH COMPONENT HERE
-import { VerticalGraph } from "../../dashboard/src/components/VerticalGraph";
+import { VerticalGraph } from "./VerticalGraph";
 const BACKEND_URL = "https://kite-backend-lmin.onrender.com";
 const Holdings = () => {
   // Initialize state for holdings data
