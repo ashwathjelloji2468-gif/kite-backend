@@ -1,0 +1,12 @@
+ {
+  "rewrites": [
+    {
+      "source": "/support",
+      "destination": "https://kite-backend-m7yt.vercel.app/support"
+    },
+    {
+      "source": "/support/:path*",
+      "destination": "https://kite-backend-m7yt.vercel.app/support/:path*"
+    }
+  ]
+}
