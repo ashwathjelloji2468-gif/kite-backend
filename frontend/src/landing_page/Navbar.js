@@ -117,6 +117,18 @@ function Navbar() {
               </a>
             </li>
 
+            {/* 🔑 CONNECTED LIVE DASHBOARD LOGIN HERE */}
+            <li className="nav-item">
+              <a
+                href="https://kite-backend-ydy1.vercel.app"
+                style={linkStyle("login")}
+                onMouseEnter={() => setHovered("login")}
+                onMouseLeave={() => setHovered("")}
+              >
+                Login
+              </a>
+            </li>
+
             <li className="nav-item">
               <span
                 style={{
