@@ -120,7 +120,7 @@ function Navbar() {
             {/* 🔑 CONNECTED LIVE DASHBOARD LOGIN HERE */}
             <li className="nav-item">
               <a
-                href="https://kite-backend-ydy1-5ysn.vercel.app" // Updated with your new active project suffix
+                href="https://kite-backend-azure.vercel.app" // 👈 Change it to this exact link
                 style={linkStyle("login")}
                 onMouseEnter={() => setHovered("login")}
                 onMouseLeave={() => setHovered("")}
