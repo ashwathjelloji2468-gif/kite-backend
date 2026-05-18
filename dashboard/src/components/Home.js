@@ -8,9 +8,10 @@ const Home = ({ darkMode, setDarkMode }) => {
 
   // If the user isn't logged in, instantly boot them back to the Zerodha login screen
   if (!isAuthenticated) {
-    return <Navigate to="/login" replace />;
+    // Directly force the browser window to jump to your active login view
+    window.location.href = "/login";
+    return null;
   }
-
   return (
     <>
       <Routes>

@@ -107,14 +107,14 @@ function Navbar() {
             </li>
 
             <li className="nav-item">
-              <Link
-                to="/support"
+              <a
+                href="https://kite-backend-m7yt.vercel.app/support"
                 style={linkStyle("support")}
                 onMouseEnter={() => setHovered("support")}
                 onMouseLeave={() => setHovered("")}
               >
                 Support
-              </Link>
+              </a>
             </li>
 
             <li className="nav-item">
