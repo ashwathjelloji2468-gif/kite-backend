@@ -120,7 +120,7 @@ function Navbar() {
             {/* 🔑 CONNECTED LIVE DASHBOARD LOGIN HERE */}
             <li className="nav-item">
               <a
-                href="https://kite-backend-azure.vercel.app" // 👈 Change it to this exact link
+                href="https://kite-backend-y83o.vercel.app/login" // 👈 Updated with your exact working link
                 style={linkStyle("login")}
                 onMouseEnter={() => setHovered("login")}
                 onMouseLeave={() => setHovered("")}
